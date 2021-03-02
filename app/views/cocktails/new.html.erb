@@ -1,0 +1,10 @@
+<h1>Your best new choice: %></h1>
+
+<div class="container">
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+
+  <%= f.input :name %>
+  <%= f.association :company %>
+  <%= f.association :roles %>
+  <%= f.button :submit %>
+<% end %>
