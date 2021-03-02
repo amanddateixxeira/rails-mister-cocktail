@@ -1,5 +1,13 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://strikebartender.com.br/wp-content/uploads/2019/09/photo-1560963689-b5682b6440f8.jpg);">
+  <div class="container">
+    <h1>Let your <strong>senses take</strong> shape and <strong>taste</strong>!</h1>
+    <p>Try the best cocktails ever.</p>
+    <a class="btn btn-flat" href="#">My cocktail</a>
+  </div>
+</div>
+
 <div class="container">
-  <h2>Here is your new choice:</h2>
+  <h2>Here is your choice:</h2>
     <ul>
     <% @cocktails.each do |cocktail| %>
     <li><%= link_to cocktail.name, cocktail_path(cocktail)%></li>

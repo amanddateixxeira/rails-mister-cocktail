@@ -1,5 +1,4 @@
 
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @garden.banner_url %>);">
  <div class="container text-center">
   <h1><%= @cocktail.name %></h1>
   </div>
@@ -34,7 +33,7 @@
         <div class="col-xs-12 col-md-4">
 
           <%= simple_form_for [@cocktail, @dose] do |f| %>
-            <%= f.input :ingredient, collection: Ingredient.order(:name),  prompt: "Take one from the list" %>
+            <%= f.association :ingredient%>
             <%= f.input :description %>
             <%= f.submit "Submit", class: "btn btn-primary" %>
           <% end %>
@@ -42,4 +41,3 @@
       </div>
     </div>
 
-</div>

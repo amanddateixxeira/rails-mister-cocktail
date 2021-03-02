@@ -1,10 +1,12 @@
-<h1>Your best new choice: %></h1>
+<a class="btn btn-ghost" href="#">View the Cocktails</a>
+<a class="btn btn-flat" href="#">Web Store</a>
+<a class="btn btn-gradient" href="#">Virtual Cocktail Events</a>
+
+<h1>Your choice</h1>
 
 <div class="container">
-<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= simple_form_for [@cocktail] do |f| %>
 
   <%= f.input :name %>
-  <%= f.association :company %>
-  <%= f.association :roles %>
   <%= f.button :submit %>
 <% end %>
